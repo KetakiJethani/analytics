@@ -5,3 +5,5 @@ range(women$height)
 (p = predict(fit, newdata = ndata))
 cbind(ndata,p)  
 plot(fit)
+
+sum((fitted(fit) - women$weight)^2)
